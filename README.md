@@ -1,8 +1,10 @@
 # 文件夹说明
-## specs 文件夹
+## topics文件夹
 技术专题内容。包含各技术专题的中英文md文件；中英文的目录树索引文件：nav.zh.yml,nav.en.yml。
 ## terms文件夹
 GIS术语。包含术语对应的中英文的md文件；中英文的目录树文件：nav.zh.yml,nav.en.yml。
+## specs文件夹
+编写文档时供参考的文档规范。包含各个规范对应的中文md文件。
 # 如何使用
 将 specs、terms两个文件夹，直接拷贝到content文件夹下。content文件夹，需要从对应产品文档仓库获取。例如，要构建iDesktop Java 帮助文档，需要从iDesktop-Java-MainDocs 仓库中下载所有文件，找到content文件夹，将这两个文件拷贝进去即可。
 除此之外，还需要从Products-Help-MainFrame 仓库中下载所有文件。
