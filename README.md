@@ -6,15 +6,14 @@ GIS术语。包含术语对应的中英文的md文件；中英文的目录树文
 ## specs文件夹
 编写文档时供参考的文档规范。包含各个规范对应的中文md文件。
 # 如何使用
-将 specs、terms两个文件夹，直接拷贝到content文件夹下。content文件夹，需要从对应产品文档仓库获取。例如，要构建iDesktop Java 帮助文档，需要从iDesktop-Java-MainDocs 仓库中下载所有文件，找到content文件夹，将这两个文件拷贝进去即可。
-除此之外，还需要从Products-Help-MainFrame 仓库中下载所有文件。
+将所有文件夹，直接拷贝到content文件夹下。content文件夹，需要从[Products-Help-MainFrame](https://github.com/SuperMap/Products-Help-MainFrame "文档主框架")仓库下载。
 
 一个完整的产品帮助文档，由以下三个仓库的内容组成：
 - Products-Help-MainFrame 
 - Products-Help-PublicContents
 - 产品文档仓库内容：命名规则：产品名称-MainDocs
 
-在进行三个仓库的文件合并时，需要按照使用说明操作，将文件拷贝到指定的目录下，否则可能会编译失败。
+其中，Products-Help-PublicContents仓库中的所有内容，产品文档仓库中的所有内容，都需要拷贝到Products-Help-MainFrame仓库中的content文件夹下。
 
 # 如何编译文档
 ## 需要的环境
