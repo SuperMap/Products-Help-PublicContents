@@ -1,8 +1,6 @@
----
-title: SuperMap BigData GIS Technology
----
-
-# SuperMap大数据GIS技术{#supermap-bigdata-tech}
+<!-- ---
+title: SuperMap大数据GIS技术
+--- -->
 
 ##	SuperMap大数据GIS技术体系{#supermap-bigdata-system}
 

@@ -1,8 +1,6 @@
----
-title: BigData GIS Technology
----
-
-# 大数据GIS技术{#bigdata-gis-tech}
+<!-- ---
+title: 大数据GIS技术
+--- -->
 
 ## 空间大数据内涵{#bigdata-intensional}   
 
