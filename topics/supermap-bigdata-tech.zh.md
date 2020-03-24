@@ -1,7 +1,7 @@
-<!-- ---
+---
+id: supermap-bigdata-tech
 title: SuperMap大数据GIS技术
---- -->
-
+---
 ##	SuperMap大数据GIS技术体系{#supermap-bigdata-system}
 
 随着大数据时代的到来，超图软件贯穿空间大数据全过程各个环节实现技术创新，将大数据存储管理、大数据空间分析和大数据流处理等技术与SuperMap GIS技术深度融合，全面扩展对大数据的支持能力，形成了全新的空间大数据GIS技术体系，体现为如下特点：
@@ -18,7 +18,7 @@ title: SuperMap大数据GIS技术
 
 大数据GIS技术着重解决两类问题：新兴的空间大数据的管理和传统（经典）空间数据的计算性能问题。因此，大数据GIS技术体系架构就包含两个非常重要的部分，如下图大数据GIS技术体系所示。一个是空间大数据技术，专门针对空间大数据的处理和分析挖掘；另一个是经典GIS功能的分布式重构，专门针对经典空间数据的管理和处理。  
 
-![](images/bigdata/大数据GIS技术体系.jpg)  
+![](images/bigdata/BigDataGISTechnology.jpg)  
 
 该技术体系通过从GIS内核级别深度结合IT的大数据技术，诸如分布式存储技术、分布式计算框架、流数据处理框架等，在GIS基础软件中构建针对空间大数据的存储、索引、管理和分析能力，让更多人仅需较少编程甚至不用编程就能管理和分析空间大数据，大幅降低了空间大数据分析的门槛。同时，利用IT的分布式存储和分布式计算框架，重构了经典GIS的经典空间数据处理和空间分析方法，实现了经典空间数据处理与分析性能的数量级提升。
 
@@ -35,7 +35,7 @@ SuperMap大数据GIS技术包括两大支撑技术——云GIS技术和跨平台
 
 + 应用与数据多平台无缝迁移。SuperMap GIS系列产品基于标准C++及java实现，提供多平台一致的GIS功能以及java、C++语言的二次开发能力。利用两种语言的特点，实现应用与数据在多平台间无缝迁移。  
 
-![](images/bigdata/SuperMap产品支持系统.png)  	
+![](images/bigdata/SuperMapProductSystem.png)  	
 
 #### 云端一体化技术{#cloud-integration-tech}
 
@@ -46,7 +46,7 @@ SuperMap大数据GIS技术包括两大支撑技术——云GIS技术和跨平台
 
 云端协同技术提供统一服务接口， 通过SuperMap iPortal 的跨组织在线协同、SuperMap iServer 的服务聚合、SuperMap iEdge 的边缘计算，实现多端互联、协同共享的GIS 应用模式。
 
-![](images/bigdata/SuperMap云端一体化技术.png)  
+![](images/bigdata/SuperMapCloud.png)  
 
 如上图SuperMap云端一体化的GIS技术体系所示，超图软件为用户提供强大的云GIS 平台软件，配套丰富多样的GIS 应用终端，协助用户更快速地搭建高效、稳定的云GIS 系统，满足更多样化、普适化、专业化的应用需求。
 
@@ -54,7 +54,7 @@ SuperMap大数据GIS技术包括两大支撑技术——云GIS技术和跨平台
 
 SuperMap GIS是全面拥抱大数据GIS的基础软件，SuperMap大数据GIS技术体系主要包括空间大数据的存储管理、空间分析、流数据处理与可视化等技术。同时，基于IT 大数据技术重构传统GIS，支持海量经典空间数据的分布式存储、处理与分析，实现数量级的性能提升。如下图SuperMap大数据GIS技术体系所示：  
 
-![](images/bigdata/SuperMap大数据GIS技术体系.png) 
+![](images/bigdata/SuperMapBigDataTechnology.png) 
 
 #### SuperMap大数据存储{#supermap-bigdata-storage}
 
@@ -67,7 +67,7 @@ SuperMap GIS 9D（2019）产品平台从内部和外围与Spark技术进行全�
 
 SuperMap GIS 9D（2019）中大数据分析算子包括全新空间大数据算子、经典分析算子（面向矢量和面向栅格）的分布式扩展、面向流数据处理的分析算子。
 
-![](images/bigdata/SuperMapGIS中大数据分析算子.png)
+![](images/bigdata/BigDataAnalysisOperator.png)
 
 如上图SuperMap中大数据分析算子所示，其中，全新空间大数据算子是面向新型的，含有地理空间位置信息的IT大数据进行的分析，主要应用在浮动车轨迹、手机信令、社交网络、物联网等场景中；面向矢量/面向栅格的分布式扩展则是聚焦在传统强GIS领域，对国土测绘等行业中的超大规模数据进行数据处理和空间分析；面向流数据处理的分析算子主要实现对流数据的自动化处理等；另外，超图还提供面向行业的专业分析算子主要是针对不同行业需求及应用场景，通过超图和行业伙伴共同研制开发提供定制化的行业算子。
 
@@ -83,11 +83,11 @@ SuperMap空间大数据技术也提供了对流数据处理的能力。流数据
 
 SuperMap大数据GIS产品中，采用了新一代的Spark分布式计算处理框架来开发大数据GIS处理平台。如下图基于Spark大数据框架的SuperMap所示： 
 
-![](images/bigdata/基于Spark大数据框架的SuperMap.png)  
+![](images/bigdata/SparkFramework.png)  
 
 SuperMap通过将全功能的组件式GIS软件SuperMap iObjects嵌入到Spark中，为空间大数据提供了查询、索引、处理和分析等GIS能力支持；同时基于SuperMap iObjects封装为Web接口，通过SuperMap iServer云GIS应用服务器调度Spark，Spark再调度iObjects组件实现基于Web的大数据存储、分析能力。SuperMap也提供了丰富多样的端产品APP以及相关的SDK，为桌面端、Web端、移动端的用户实现功能交互以及可视化展示；并提供了SuperMap iManager为云平台或者物理服务器的大数据环境提供运维管理能力。 
 
-![](images/bigdata/SuperMap大数据GIS基础软件架构.png)  
+![](images/bigdata/BigDataGISInfrastructure.png)  
 
 如上图SuperMap大数据GIS基础软件架构所示，SuperMap大数据GIS基础软件的框架包括：数据存储方面提供了分布式空间存储数据引擎Postgres-XL、MongoDB、Elasticsearch、HDFS、HBase等，为空间大数据提供高效的存储基础；基于SuperMap iObjects Java与Spark技术框架融合，形成了空间大数据组件层，具有全功能的分布式计算的空间大数据核心能力，包括数据管理能力、空间分析能力、流数据处理能力等；基于组件能力封装成服务接口，为SuperMap iServer新增了数据目录服务、分布式分析服务以及流数据处理服务的能力；基于C/S架构的组件GIS大数据能力和B/S架构的WebGIS大数据能力，提供了SuperMap iDesktop Java（PC端）、SuperMap WebApps（Web端）、SuperMap iClient JavaScript/Python（Web端）、SuperMap iMobile（移动端）等可以调用SuperMap iServer的服务或者SuperMap iObjects的组件功能来进行空间大数据处理和可视化展示的多样化GIS端；提供了SuperMap iManager为云平台或者物理服务器的大数据环境进行统一地运维管理。 
 
@@ -97,7 +97,7 @@ SuperMap通过将全功能的组件式GIS软件SuperMap iObjects嵌入到Spark�
 
 SuperMap 大数据GIS继承了SuperMap 云GIS的技术资产，在原有云端一体化GIS技术体系、跨平台GIS技术体系的基础上，扩展形成了大数据GIS技术体系。也就是说SuperMap 大数据GIS完全具备空间大数据的存储、分析、服务和可视化的相关能力，同时实现了已有技术体系与大数据技术的深度融合，在已有的技术方案基础上提供了可靠易用的空间大数据GIS解决方案。  
 
-![](images/bigdata/SuperMap大数据GIS全平台扩展大数据能力.png)   
+![](images/bigdata/BigDataGISExpand.png)   
 
 如上图SuperMap 大数据GIS全平台扩展大数据能力所示，SuperMap 从各个平台产品都扩展了大数据技术能力，可以提供更海量数据的存储能力，提供更多数据来源、数据类型的管理能力，提供更快的数据处理能力，提供更多元、更实用的可视化展示能力。SuperMap不仅仅只有大数据，同时对大数据基础设施的运维管理、大数据资源门户管理等时空大技术延伸技术辅助也提供了完备的技术方案。  
 SuperMap的大数据技术体系的功能设计理念是完全从用户的业务需求出发，使大数据技术与原有GIS技术能力实现互补，真正使用空间大数据的技术去解决用户面临的问题，提供更加强大、更加实用、更加可靠的空间大数据技术支持。  
@@ -105,7 +105,7 @@ SuperMap的大数据技术体系的功能设计理念是完全从用户的业务
 ###	全流程体现大数据技术{#whole-process-bigdata-tech}
 SuperMap产品涉及全生命周期的大数据处理流程，从大数据收集及处理、大数据存储、大数据分析、大数据服务到可视化展示，每个环节都实现了产品级的功能扩展，真正实现了大数据技术的内外兼修。 
 
-![](images/bigdata/SuperMap平台全流程体现大数据技术.png)  
+![](images/bigdata/BigDataTechnology.png)  
 
 如上图SuperMap平台全流程体现大数据技术所示，SuperMap iDesktop.NET/Java或基于SuperMap iObjects的行业二次开发应用提供了从大数据收集、清洗、转换、融合、质检、编辑等多项可视化配置处理流程，既支持传统的矢量数据、影像数据，也支持新型的倾斜摄影、BIM、街景、点云数据，同时支持海量结构化或非结构化的互联网数据。SuperMap SDX + Big Data空间大数据引擎，实现了对矢量数据、切片数据、流数据的空间大数据的分布式高效存储能力。基于iObjects组件内嵌Spark分布式计算架构，提供了空间大数据分布式计算分析能力，对传统GIS分析算子进行分布式计算能力重构，同时开放了组件的定制开发能力。基于SuperMap iServer的服务扩展，提供了大数据分析服务、空间大数据存储服务和流数据服务能力。同时，提供了更加丰富的热力图、密度图、OD图等大数据可视化展示效果。  
 
@@ -113,13 +113,13 @@ SuperMap产品涉及全生命周期的大数据处理流程，从大数据收集
 
 SuperMap大数据平台产品封装并内置Spark环境，所有产品技术细节对用户透明，化繁为简，让熟悉云平台的用户无缝平滑过度到大数据平台中，所有操作仍然沿用更友好的可视化界面部署步骤，真正实现安装即用的用户体验，极大降低了大数据GIS平台的部署和使用门槛。如下图SuperMap实现技术整合透明化所示：  
 
-![](images/bigdata/SuperMap实现技术整合透明化.png)   
+![](images/bigdata/SuperMapTechnologyIntegration.png)   
 
 大数据技术架构多采用分布式技术，通过对已有的SuperMap SDX+引擎扩展大数据能力，对分布式数据库如Postgres-XL、MongoDB、Elasticsearch、HBase实现对接，同时支持分布式文件系统HDFS。为了降低用户使用和管理门槛，通过iServer DataStore实现多种数据存储应用场景的集成，为用户提供集中化管理，统一数据访问入口。同时SuperMap平台深度融合Spark技术，并基于Spark数据类型扩展空间能力，重新封装空间分析算子。该技术细节对用户透明，用户可以像使用普通版本一样去执行具有分布式计算能力的空间分析工具。 
 
 从分布式存储到分布式计算，为了更好的对空间大数据基础设施以及运行环境实现运维管理，利用SuperMap iManager实现大数据环境的快速构建、智能化的资源管理和监控告警，让大数据运维更加的简单快捷。如下图SuperMap实现运维管理智能化所示：
 
-![](images/bigdata/SuperMap实现运维管理智能化.png) 
+![](images/bigdata/SuperMapOperationalIntelligence.png) 
   
 ###	全天候保证快速高效{#fast-and-efficient}
 
@@ -127,28 +127,28 @@ SuperMap大数据平台产品封装并内置Spark环境，所有产品技术细�
 
 如下图SuperMap GIS与Spark技术深度融合所示，SuperMap iObjects是基于标准C++构建的，功能强大、性能稳定、具备高度的可移植性以及极强的扩展能力。在此基础上与Spark技术深度融合，形成SuperMap iObjects for Spark模块，技术体系一脉相承、结构完整。另外，底层C++语言相比较java更加稳定、性能更高。 
 
-![](images/bigdata/SuperMap&#32;GIS与Spark技术深度融合.png) 
+![](images/bigdata/GIS_Spark.png) 
    
 超图软件不断创新和发展GIS 技术，实现与大数据技术的深度融合，致力于为用户提供强大的空间大数据GIS 基础软件及服务，降低技术门槛，让更多用户能够轻松管理与挖掘空间大数据“金矿”。  
 SuperMap平台内嵌了第二代大数据计算框架Spark技术，较第一代大数据计算框架MapReduce性能呈几何级递增。数据分析服务为用户提供多种基于全新并行处理架构的空间分析能力，与分布式大数据存储机制实现双轮驱动，尽可能减少磁盘I/O和网络I/O的性能损耗，让空间大数据分析更快速、更高效、更稳定。在对已经支持的具有分布式计算能力的空间分析算子的测试结果看，相比较传统模式性能有几十倍的提高。 
 
 如下图某省测绘局数据叠加分析所示，以某省矢量数据叠加分析为例，进行测试，可知使用分布式计算比传统计算模式性能提升20倍。大数据分析计算性能提升的多少主要受节点数及数据量的影响。其中，节点数越多，大数据计算速度越快；数据量越大，性能提升的幅度越大，大数据分析计算的优势越明显。  
 
-![](images/bigdata/某省测绘局数据叠加分析.png)   
+![](images/bigdata/OverAnalysisExample.png)   
 
 如下图地形适宜性分析所示，以全球DEM数据地形适宜性分析为例，进行测试，可知使用分布式计算比传统计算模式性能提升50倍。另外，大数据分析计算性能提升的多少主要受节点数及数据量的影响。其中，节点数越多，大数据计算速度越快；数据量越大，性能提升的幅度越大，大数据分析计算的优势越明显。 
 
-![](images/bigdata/地形适宜性分析.png)   
+![](images/bigdata/TerrainAnalysis.png)   
 
 SuperMap 大数据分析计算随着节点的增加，计算时间越短，性能越高。如下图格网汇总分析多节点测试所示，在网格汇总分析多节点测试中，随着节点数目的增加，计算耗时越少。
 
-![](images/bigdata/格网汇总分析多节点测试.jpg)  
+![](images/bigdata/GridMultiNode.jpg)  
 
 ###	全自动实现随需所用{#automatic-implementation}
 
 由于SuperMap将Spark的集群架构技术融合到SuperMap iServer集群架构中，实现了基于SuperMap iServer多层次集群的大数据处理能力，同时通过SuperMap iManager实现了为上层虚拟GIS云主机集群提供智能化的资源管理能力和弹性伸缩能力。如下图SuperMap实现自动化弹性伸缩所示：
 
-![](images/bigdata/SuperMap实现自动化弹性伸缩.png)  
+![](images/bigdata/AutomaticElastic.png)  
 
 用户只需要预先设置CPU负载、内存负载、网络负载的相关阈值，便可以实现自动化的弹性伸缩。当前端并发访问或者分布式计算压力超过设置的阈值时，系统会自动增加集群子节点实现负载均衡，这样可以保证整个集群以及相关地图服务的高效稳定运行；反过来当相关负载小于设置阈值，系统会自动减少一个子节点，将资源归还到整体资源池，真正实现硬件资源的“随机应变”，达到资源的集约化利用。 
 
@@ -165,7 +165,7 @@ SuperMap在桌面端、Web端、移动端提供了多种GIS SDK与通用型应�
 
 综上可知，超图提供了从组件到Web端的大数据分析算子，用户可根据不同应用场景及技术架构，选择合适的模型算子。 
 
-![](images/bigdata/核心算子.png) 
+![](images/bigdata/CoreOperator.png) 
 
 在SuperMap GIS 中，为用户提供了丰富的空间分析工具，帮助用户从空间、时间、属性等多个维度了解和认知大数据，同时提供更加强劲的大数据分析挖掘能力。  
 
@@ -174,7 +174,7 @@ SuperMap GIS 9D（2019）中大数据分析算子既包括全新空间大数据�
 ###	全产品适用不同场景{#all-products-applicable-scene}
 SuperMap平台可根据不同场景，为用户构建大数据GIS，主要包括： 
 
-![](images/bigdata/多场景构建大数据GIS.png)   
+![](images/bigdata/Multi-sceneConstruction.png)   
 
 1. 当用户没有大数据平台，则通过内置Spark技术的SuperMap平台提供空间数据管理与分析能力，以及大数据处理能力。一方面使得用户拥有了空间数据分析GIS平台，一方面使得用户拥有了大数据能力，节约成本。SuperMap iServer 中提供了基于 Spark 计算框架运行的分布式分析服务和流数据服务等，并内置了 Spark 安装包，可以实现一键部署大数据环境。  
 

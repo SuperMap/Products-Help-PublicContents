@@ -1,7 +1,7 @@
-<!-- ---
+---
+id: SuperMapProductSafe-Technology
 title: SuperMap产品安全技术
---- -->
-
+---
  
 ## SuperMap 产品安全白皮书
 
@@ -59,13 +59,13 @@ GIS系统（包括数据、Web 应用等）设置在内网中，使用一道防�
 - Linux SSH登录端口（一般为22）
 - Windows远程登录端口 （一般为3389） 
 
-![](images/productsafe/单防火墙.png)  
+![](images/productsafe/singlefirewall.png)  
 
 #### 多防火墙（使用反向代理）
 
 对GIS系统的保护还可以通过设置多道防火墙来实现，多道防火墙之间会形成隔离区（相对于内网，可以称为外围网络），在此区域可以设置反向代理服务器，从而使 GIS 服务器更加安全，如下图。
 
-![](images/productsafe/多防火墙.png)
+![](images/productsafe/Multifirewall.png)
 
 反向代理（Reverse Proxy）方式是指以代理服务器来接受 internet 上的连接请求，然后将请求转发给内部网络上的服务器，并将从服务器上得到的结果返回给 internet 上请求连接的客户端，此时代理服务器对外就表现为一个服务器。 
 
@@ -86,7 +86,7 @@ SuperMap 提供了一些端口方面的安全措施：
 8100        | 启用多进程时，进程间通信   | 是
 8900-9000   | 启用多进程时，启用进程节点 | 是
 - 只开放服务端口。SuperMap iServer 提供了集群技术来提升服务性能和增强服务器稳定性，服务器集群以后，对外提供服务的端口使用的是父节点的端口（如下图），各个子节点端口不暴露。
-![](images/productsafe/集群中端口暴露.png)
+![](images/productsafe/PortExposure.png)
 
 ### HTTPS加密通信
 
@@ -103,7 +103,7 @@ SuperMap iServer 和SuperMap iEdge 均支持将经过 https 加密后的第三�
 GIS系统备份安全保护措施需要用户根据自身需求进行相关配置。
 SuperMap提供GIS服务器配置的定期备份能力，主要通过可视化界面实现，简单方便易操作，如下图。
 
- ![](images/productsafe/备份与恢复.png)
+ ![](images/productsafe/BackupRestore.png)
 
 ###  GIS系统日志
 
@@ -121,7 +121,7 @@ SuperMap提供多种数据加密方式，主要通过可视化界面实现，方
 
 GIS工作空间存储了一个工程项目（同一个事务过程）中所有的数据源、地图的组织关系，使用SuperMap iDesktop制作的地图，均保存在工作空间中。GIS工作空间保存时，可设置密码，以保障数据安全。如果是数据库型工作空间，则可通过数据库账户（用户名称、用户密码）来确保数据安全，如下图。
 
- ![](images/productsafe/工作空间加密.png)
+ ![](images/productsafe/WorkspaceEncryption.png)
 
 ### 基础GIS数据库加密
 
@@ -133,9 +133,7 @@ GIS工作空间存储了一个工程项目（同一个事务过程）中所有�
 
 - 数据库型
 
-如果基础GIS数据存在数据库型数据源中，使用的是数据库本身的安全策略和安全机制，需要为存储GIS数据创建专用账户，并严格限定权限，提升信息安全，如下图。
-
- ![](images/productsafe/数据库型.png)
+如果基础GIS数据存在数据库型数据源中，使用的是数据库本身的安全策略和安全机制，需要为存储GIS数据创建专用账户，并严格限定权限，提升信息安全。
 
 ### 缓存数据加密
 
@@ -146,7 +144,7 @@ SuperMap 的地图缓存和场景缓存均支持加密存储，其中地图缓�
 在SuperMap iServer 中启动三维服务后，会自动生成一个随机的加密密码。SuperMap iClient 客户端浏览三维服务时会缓存三维数据并使用服务端生成的密码自动对下载的三维数据进行加密。
 服务器端管理员可以修改这个默认的加密密码，并可设置三维缓存数据是否允许拷贝，如下图。
 
- ![](images/productsafe/三维数据安全.png)
+ ![](images/productsafe/3dSecurity.png)
 
 ### 定期备份数据
 
@@ -162,7 +160,7 @@ SuperMap提供多种服务安全策略，同时提供配置帮助文档。
 
 在服务安全方面，SuperMap iServer 支持基于角色的访问控制，且支持用户组，支持 Token （令牌）机制。在服务管理器中提供安全模块，通过基于用户身份识别的认证和授权，实现对服务的访问控制，如下图。
 
- ![](images/productsafe/安全模块.png)
+ ![](images/productsafe/SecurityModule.png)
 
 #### 用户管理
 

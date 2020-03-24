@@ -8,11 +8,11 @@ title: SuperMap Document screenshot specifications
 Windows7默认蓝风格，不启用透明效果，设置流程如下：  
 1. 设置主题风格，选择“Windows7”； 
 
-![图：主题风格设置](images/screenshot/设置主题风格.png "设置主题风格") 
+![图：主题风格设置](images/screenshot/ThemeStyle.png "设置主题风格") 
 
 2. 设置窗口颜色，点击上图中“窗口颜色”，进入下面的对话框，设置窗口的颜色，并且取消“启用透明效果”前复选框的选中状态，然后点击“保存修改”按钮即可。  
 
-![图：设置窗口颜色](images/screenshot/设置窗口颜色.png "窗口颜色设置")  
+![图：设置窗口颜色](images/screenshot/WindowColor.png "窗口颜色设置")  
 
 ## 截图工具
 
@@ -33,7 +33,7 @@ Windows7默认蓝风格，不启用透明效果，设置流程如下：
 
   当在第三方的软件中截图时，尽量避免截取带有第三方标志的部分以及没有必要展示的部分，例如，在 IE 浏览其中截取网页内容时，避免截取如下图中圈定的标题栏/标签页、收藏夹/书签栏、工具栏、命令栏、菜单栏及状态栏还有滚动条等部分。尤其在截取网页图片是不要出现个人收藏等其他信息。  
 
-![图：三方软件截图](images/screenshot/第三方软件内截图时图示.png "在第三方软件截图示例")
+![图：三方软件截图](images/screenshot/ScreenshotSample.png "在第三方软件截图示例")
 
   注意：如果包含浏览器相关截面截图时，应避免暴露真实外网IP地址。
 
@@ -41,7 +41,7 @@ Windows7默认蓝风格，不启用透明效果，设置流程如下：
 
   当截取带有背景的图片时，尽量采用示范数据中已经配好的地图/场景等作为背景，如当截取带有地图背景的图片时，尽量采用安装包提供的示范数据中已经配好的地图，主要采用世界题图（世界题图_Day），如需要小范围数据，可以使用京津地区的地图。
 
-![图：窗口背景](images/screenshot/地图背景图片为世界地图.png "地图背景图片为世界题图")  
+![图：窗口背景](images/screenshot/MapBackground.png "地图背景图片为世界题图")  
 
 ### 图片样式
 
@@ -55,15 +55,15 @@ Windows7默认蓝风格，不启用透明效果，设置流程如下：
 
   大部分截图统一居中放置，API的资源结构图左对齐放置。  
 
-![图：图片位置1](images/screenshot/界面居中放置.png "一般截图居中放置")  
+![图：图片位置1](images/screenshot/CenterInterface.png "一般截图居中放置")  
 
-![图：图片位置2](images/screenshot/资源结构图左对齐放置.png "资源结构图左对齐放置")  
+![图：图片位置2](images/screenshot/LeftAligned.png "资源结构图左对齐放置")  
 
 #### 图注  
 
   若截图需添加图注。图注样式统一为图： XXXX，字体为当前文本字体，字号为当前文本字号，颜色建议为黑色。居中放置在对应图片下方，如下图所示。
 
-![图：图注示例](images/screenshot/图注示例.png "图注示例")  
+![图：图注示例](images/screenshot/FigureSample.png "图注示例")  
 
   因为目前各产品文档的文字字体和字号都有一定差异。为了整体协调性所以图注没办法直接设置为统一的字体和字号。  
 
@@ -71,7 +71,7 @@ Windows7默认蓝风格，不启用透明效果，设置流程如下：
 
   一般的弹出的对话框，截取全图，使用Snagit的自动截图功能截取即可，截图前可以将页面缩小。如图所示：  
 
-![图：完整截图](images/screenshot/完整截图.png "完整截图示例")  
+![图：完整截图](images/screenshot/CompleteScreenshots.png "完整截图示例")  
 
   注意：对整个软件界面进行截图的时候，不能截取到Windows的任务栏，不能出现QQ、微信等工具的图标。
 
@@ -79,7 +79,7 @@ Windows7默认蓝风格，不启用透明效果，设置流程如下：
 
   当描述的范围为整个界面的一部分或者某一个整体区域的一部分，考虑图片尺寸的限制，就不可能截取整个区域，因此，为了体现所截取的插图为某个整体区域的一部分，采用下面的表达方式，即撕裂的效果，以Snagit 12为例，对应Snagit>Image> Styles>Edges>Torn edge 图像边界效果。
 
-![图：局部截图](images/screenshot/局部截图.png "局部截图-其右侧还有内容")  
+![图：局部截图](images/screenshot/LocalScreenshots.png "局部截图-其右侧还有内容")  
   建议自己添加几个Quick Styles，以方便对图片的上、下、左、右分别进行处理。关于Quick Styles的设置：  
   1. 一般可以先选择默认提供的几个撕裂方式  
   2. 默认的这几种样式，边线颜色太深（为黑色），并且带有阴影，放在文档中不好看。所以，可以对几种样式进行修改。  
@@ -95,7 +95,7 @@ Outline width:2px
 Outline color:RGB(192,192,192)  
 ***  
 
-![图：局部截图参数设置](images/screenshot/设置参数.png "局部截图参数设置")  
+![图：局部截图参数设置](images/screenshot/SetParam.png "局部截图参数设置")  
 
 ### 框选
 
@@ -103,11 +103,11 @@ Outline color:RGB(192,192,192)
 
   **注意：** 框选时尽量只框选需要重点突出的部分，避免框选其他的部分，不能遮挡图片有效内容。避免框选颜色与图片本身的颜色混淆。 
 
-![图：矩形框选](images/screenshot/框选.png "矩形框选示例")  
+![图：矩形框选](images/screenshot/BoxSelect.png "矩形框选示例")  
 
 若图片无边框和背景，与网页中的文字不好区别，可以为其添加浅色边框以示区别。  
 
-![图：浅色边框](images/screenshot//浅色边框.png "图片浅色边框")  
+![图：浅色边框](images/screenshot/LightBorder.png "图片浅色边框")  
 
 **矩形边框样式参数**  
 <table>  
@@ -161,11 +161,11 @@ Outline color:RGB(192,192,192)
 
 文本框如图所示  
 
-![](images/screenshot/橘红色文本标注框.png "橘红色文本标注框")
+![](images/screenshot/orangered.png "橘红色文本标注框")
 
-![](images/screenshot/蓝色文本标注框.png "蓝色文本标注框")
+![](images/screenshot/Blue.png "蓝色文本标注框")
 
-![](images/screenshot/红色文本标注框.png "红色文本标注框") 
+![](images/screenshot/Red.png "红色文本标注框") 
 
 另外，如果文本标注与矩形框元素配合使用，上面的“文本标注背景图框标准”与橘黄色矩形框配合使用，但如果配合使用的矩形框为非橘红色，则使用与矩形框颜色匹配的文本标注背景图框。
 
@@ -232,7 +232,7 @@ Outline color:RGB(192,192,192)
 
 另外，有些图片中的说明文字不加背景图框效果较佳，那么可以采用下面的形式:  
 
-![图：文字标注情况2](images/screenshot/文字标注情况2.png "文字标注情况2")  
+![图：文字标注情况2](images/screenshot/Textlabel2.png "文字标注情况2")  
 
 文字标注颜色与箭头配合使用，如橘黄色文字标注与橘黄色箭头搭配使用，但如果配合使用的箭头为非橘黄色，则使用与箭头颜色匹配的文字标注。
 
@@ -254,11 +254,11 @@ Outline color:RGB(192,192,192)
 
 如果截图中出现序号，应与矩形框元素配合使用，下面的“橘黄色序号”与橘黄色矩形框配合使用，但如果配合使用的矩形框为非橘黄色，则使用与矩形框颜色匹配的序号。  
 
-![](images/screenshot/橘红色序号.png "橘红色序号")
+![](images/screenshot/OrangeNum.png "橘红色序号")
 
-![](images/screenshot/蓝色序号.png "蓝色序号")
+![](images/screenshot/BlueNum.png "蓝色序号")
 
-![](images/screenshot/红色序号.png "红色序号")  
+![](images/screenshot/RedNum.png "红色序号")  
 
 **序号设置参数**
 
@@ -292,9 +292,7 @@ Outline color:RGB(192,192,192)
 ### 图片存在放大显示部分时
 
 当图片过小无法显示全部信息时，建议使用放大图片脚本。当用户想要放大查看图片信息时，可点击图标查看放大效果。  
-也可使用如下图的方式进行放大显示。
 
-![图片放大显示](images/screenshot/放大显示.png "图片放大显示")  
 
 ### 插入视频时
 
@@ -324,13 +322,12 @@ Outline color:RGB(192,192,192)
 
 2. 对于网页地址，可以写成 http://www.supermap..com.cn\html\... 。  
 
-![图：图示](images/screenshot//图片内有路径的示例.png "图片内有路径")
 
 ###  当插入图片为公式类时
 
 当插入的图片为公式类时，即当插入的图片为如图所示的中英文字时，建议与当前文档字体统一。
 
-![图：公式类图片](images/screenshot/公式类图片.png "公式类图片")
+![图：公式类图片](images/screenshot/FormulaPicture.png "公式类图片")
 
 ## 各产品特有截图样式
 
@@ -338,9 +335,9 @@ Outline color:RGB(192,192,192)
 
 1. 移动设备上的截图统一加设备边框，具体需要区分手机和平板设备，统一添加如下样式的边框。 
 
-![图：手机截图样式](images/screenshot/手机.png "手机截图")
+![图：手机截图样式](images/screenshot/Phone.png "手机截图")
 
-![图：平板截图样式](images/screenshot/平板.png "平板截图")  
+![图：平板截图样式](images/screenshot/iPad.png "平板截图")  
 
 2. 不同截图根据设备型号，选择不同的边框样式，帮助文档中的边框统一选择深色风格，如上所示。  
 3. Android系统相关设备的配图不保留虚拟键盘及状态栏，在截图时需隐藏或处理截图时裁剪掉。边框大小根据裁剪后的尺寸进行调整。  
