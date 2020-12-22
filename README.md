@@ -1,12 +1,12 @@
 # 文件夹说明
 ## topics文件夹
-技术专题内容。包含各技术专题的中英文md文件；中英文的目录树索引文件：nav.zh.yml,nav.en.yml。
+技术专题内容。包含各技术专题的中英文md文件；
 ## terms文件夹
-GIS术语。包含术语对应的中英文的md文件；中英文的目录树文件：nav.zh.yml,nav.en.yml。
+GIS术语。包含术语对应的中英文的md文件；
 ## specs文件夹
 编写文档时供参考的文档规范。包含各个规范对应的中文md文件。
 # 如何使用
-将所有文件夹，直接拷贝到content文件夹下。content文件夹，需要从[Products-Help-MainFrame](https://github.com/SuperMap/Products-Help-MainFrame "文档主框架")仓库下载。
+将所有文件夹，直接拷贝到content文件夹下对应的zh、en文件夹下。content文件夹，需要从[Products-Help-MainFrame](https://github.com/SuperMap/Products-Help-MainFrame "文档主框架")仓库下载。
 
 一个完整的产品帮助文档，由以下三个仓库的内容组成：
 - Products-Help-MainFrame 
